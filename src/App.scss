@@ -1,0 +1,28 @@
+.approach-section {
+  background: var(--gray-a2);
+  &--photo {
+    background:  linear-gradient(to left, rgba(255,255,255,0) 60%, #fff 100%),
+    url('../public/terapia.svg') right center no-repeat;
+  }
+}
+
+.footer-section {
+  background: var(--gray-a5)
+}
+
+.about-section {
+  &--photo {
+    background: 
+    linear-gradient(to right, rgba(255,255,255,0) 60%, #fff 100%),
+    url('../public/psicologo.png') left center no-repeat;
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+
+    &-text {
+      background: var(--gray-1);
+      position: absolute;
+      bottom: 0;
+      width: -webkit-fill-available;
+    }
+  }
+}

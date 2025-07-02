@@ -1,0 +1,108 @@
+@import "@radix-ui/themes/styles.css";
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.gradient-background {
+  background: var(--lime-3);
+  background-size: 300% 300%;
+  animation: gradient-animation 25s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.radix-themes { 
+  --default-font-family: 'Roboto', 'Helvetica Neue', 'Open Sans (Custom)', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji' !important;
+}
+
+:root, .light, .light-theme {
+  --lime-1: #fbfef9;
+  --lime-2: #f6fbf2;
+  --lime-3: #ebf7e1;
+  --lime-4: #e0f0d0;
+  --lime-5: #d5e5c6;
+  --lime-6: #c7d7b8;
+  --lime-7: #b4c3a5;
+  --lime-8: #9aaa8c;
+  --lime-9: #879679;
+  --lime-10: #7b896d;
+  --lime-11: #627055;
+  --lime-12: #2d3920;
+
+  --lime-a1: #55d50006;
+  --lime-a2: #4fb1000d;
+  --lime-a3: #55bb001e;
+  --lime-a4: #57ae002f;
+  --lime-a5: #448b0039;
+  --lime-a6: #36700047;
+  --lime-a7: #2b56015a;
+  --lime-a8: #20430073;
+  --lime-a9: #1b380086;
+  --lime-a10: #19310092;
+  --lime-a11: #142900aa;
+  --lime-a12: #0f1d00df;
+
+  --lime-contrast: #fff;
+  --lime-surface: #f4faefcc;
+  --lime-indicator: #879679;
+  --lime-track: #879679;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --lime-1: oklch(99.4% 0.0069 129.7);
+      --lime-2: oklch(98.2% 0.0119 129.7);
+      --lime-3: oklch(96.1% 0.0301 129.7);
+      --lime-4: oklch(93.4% 0.0451 129.7);
+      --lime-5: oklch(90.1% 0.0451 129.7);
+      --lime-6: oklch(85.8% 0.0451 129.7);
+      --lime-7: oklch(79.8% 0.0451 129.7);
+      --lime-8: oklch(71.6% 0.0451 129.7);
+      --lime-9: oklch(65.2% 0.0451 129.7);
+      --lime-10: oklch(61.2% 0.0451 129.7);
+      --lime-11: oklch(52.7% 0.0451 129.7);
+      --lime-12: oklch(32.7% 0.0451 129.7);
+
+      --lime-a1: color(display-p3 0.5137 0.8392 0.0235 / 0.024);
+      --lime-a2: color(display-p3 0.349 0.6745 0.0235 / 0.048);
+      --lime-a3: color(display-p3 0.3608 0.7176 0.0039 / 0.11);
+      --lime-a4: color(display-p3 0.3686 0.6392 0.0039 / 0.173);
+      --lime-a5: color(display-p3 0.2824 0.502 0.0039 / 0.212);
+      --lime-a6: color(display-p3 0.2235 0.4 0.0039 / 0.267);
+      --lime-a7: color(display-p3 0.1765 0.3137 0.0039 / 0.342);
+      --lime-a8: color(display-p3 0.1255 0.2353 0.0039 / 0.44);
+      --lime-a9: color(display-p3 0.1098 0.2 0 / 0.514);
+      --lime-a10: color(display-p3 0.098 0.1765 0 / 0.561);
+      --lime-a11: color(display-p3 0.0784 0.1451 0 / 0.655);
+      --lime-a12: color(display-p3 0.0549 0.102 0 / 0.863);
+
+      --lime-contrast: #fff;
+      --lime-surface: color(display-p3 0.9608 0.9804 0.9412 / 0.8);
+      --lime-indicator: oklch(65.2% 0.0451 129.7);
+      --lime-track: oklch(65.2% 0.0451 129.7);
+    }
+  }
+}
