@@ -7,7 +7,7 @@ import { CallOutlined } from "@mui/icons-material";
 function App() {
   return (
     <Box className="App">
-      <Box className=" gradient-background">
+      <Box className=" header-background">
         <header>
           <Box px={'8'} py={'4'}>
             <Heading size="8" className="logo" color={"gray"}>
