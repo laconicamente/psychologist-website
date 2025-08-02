@@ -12,7 +12,7 @@ import {
   Link,
 } from "@radix-ui/themes";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
-import { CallOutlined, CalendarToday, MapRounded } from "@mui/icons-material";
+import { CallOutlined, MapRounded } from "@mui/icons-material";
 import { CalendarIcon } from "@radix-ui/react-icons";
 
 function App() {
