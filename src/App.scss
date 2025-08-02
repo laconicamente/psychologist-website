@@ -1,20 +1,21 @@
 .approach-section {
   background: var(--gray-a2);
+
   &--photo {
-    background:  linear-gradient(to left, rgba(255,255,255,0) 60%, #fff 100%),
-    url('../public/terapia.svg') right center no-repeat;
+    background: url('../public/images/agnostic-symbol.png') right center no-repeat;
   }
 }
 
 .footer-section {
-  background: var(--gray-a5)
+  background: var(--gray-a12);
+  color: var(--gray-1) !important;
 }
 
 .about-section {
   &--photo {
-    background: 
-    linear-gradient(to right, rgba(255,255,255,0) 60%, #fff 100%),
-    url('../public/psicologo.png') left center no-repeat;
+    background:
+      linear-gradient(to right, rgba(255, 255, 255, 0) 60%, #fff 100%),
+      url('../public/images/psicologo.png') left center no-repeat;
     background-size: contain, cover;
     background-repeat: no-repeat, no-repeat;
 
@@ -24,5 +25,11 @@
       bottom: 0;
       width: -webkit-fill-available;
     }
+  }
+}
+
+.contact-section {
+  &--map {
+    
   }
 }
