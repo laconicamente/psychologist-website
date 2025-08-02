@@ -53,7 +53,7 @@ function App() {
         >
           <Box position={"relative"} className="about-section--photo">
           </Box>
-          <Box px={"9"}>
+          <Box px={"9"}> 
             <Section>
               <Flex direction={"column"} gap={"5"}>
                 <Heading size="8" className="heading-title">
