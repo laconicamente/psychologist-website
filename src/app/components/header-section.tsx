@@ -5,6 +5,7 @@ import CalendarMonthOutlined from "@mui/icons-material/CalendarMonthOutlined";
 import { ContentSection } from "./content-section";
 import { cn } from "@/lib/utils";
 import { LinkPreview } from "./link-preview";
+import Image from "next/image";
 
 
 function GridBackgroundDemo() {
@@ -22,7 +23,15 @@ function GridBackgroundDemo() {
 
       <div className="px-4 py-10 md:p-20">
         <h1 className="relative playfair z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 text-5xl lg:text-7xl dark:text-slate-300">
-          {"Pedro Vieira"
+      <div>
+      <Image
+  src="/images/pedro-vieira.png"
+  alt="Pedro vieira"
+  width={100}
+  height={100}
+  className="mx-auto mb-4 rounded-full block md:hidden"
+/>        </div>
+        {"Pedro Vieira"
             .split(" ")
             .map((word, index) => (
               <motion.span
