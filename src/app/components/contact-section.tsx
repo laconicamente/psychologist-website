@@ -24,11 +24,11 @@ export function ContactSection() {
         className="relative w-full"
       >
         <Box minHeight={"15em"}>
-          <div className="relative p-10 pb-15">
-            <Box display={"flex"} flexDirection={{ xs: "column", sm: "column", md: "row" }} gap={9}>
+          <div className="relative p-10 py-15">
+            <Box display={"flex"} flexDirection={{ xs: "column", sm: "column", md: "row" }} gap={4}>
               <Box width={{ sm: "100%", md: "50%" }}>
                 <Box gap={3}>
-                  <h2 className="relative z-20 py-8 font-bold text-5xl sm:text-5xl">
+                  <h2 className="relative z-20 pb-8 font-bold text-5xl sm:text-5xl">
                     {"Entre em contato".split(" ").map((word, index) => (
                       <motion.span
                         key={index}

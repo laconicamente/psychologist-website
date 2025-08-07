@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pedro C. Vieira - Psicólogo e Psicanalista",
+  title: "Pedro Vieira - Psicólogo e Psicanalista",
   description: "Consultas presenciais e online",
 };
 

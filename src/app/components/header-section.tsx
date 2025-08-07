@@ -8,7 +8,7 @@ import { LinkPreview } from "./link-preview";
 import Image from "next/image";
 
 
-function GridBackgroundDemo() {
+function InitialSection() {
   return (
     <div className="relative flex h-[30em] w-full items-center justify-center bg-white dark:bg-green">
       <div
@@ -23,15 +23,16 @@ function GridBackgroundDemo() {
 
       <div className="px-4 py-10 md:p-20">
         <h1 className="relative playfair z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 text-5xl lg:text-7xl dark:text-slate-300">
-      <div>
-      <Image
-  src="/images/pedro-vieira.png"
-  alt="Pedro vieira"
-  width={100}
-  height={100}
-  className="mx-auto mb-4 rounded-full block md:hidden"
-/>        </div>
-        {"Pedro Vieira"
+          <div>
+            <Image
+              src="/images/pedro-vieira.png"
+              alt="Pedro vieira"
+              width={100}
+              height={100}
+              className="mx-auto mb-4 rounded-full block md:hidden"
+            />
+          </div>
+          {"Pedro Vieira"
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -62,7 +63,7 @@ function GridBackgroundDemo() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-           Psicanalista e Psicólogo <br />(CRP 03/27244)
+          Psicanalista e Psicólogo <br />(CRP 03/27244)
         </motion.p>
         <motion.div
           initial={{
@@ -78,7 +79,7 @@ function GridBackgroundDemo() {
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
           <LinkPreview url="https://wa.me/557498044544?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" className="font-bold">
-            <button style={{ cursor: 'pointer' }} className="px-12 py-4 rounded-full bg-[#62b65d] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#69c464] transition-colors duration-200">
+            <button style={{ cursor: 'pointer', fontSize: '11pt' }} className="px-12 py-3 rounded-full bg-[#62b65d] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#69c464] transition-colors duration-200">
               <CalendarMonthOutlined /> Agende sua consulta
             </button>
           </LinkPreview>
@@ -92,7 +93,7 @@ function GridBackgroundDemo() {
 export function HeaderSection() {
   return (
     <div className="relative flex w-full flex-wrap justify-center">
-      <GridBackgroundDemo />
+      <InitialSection />
       <motion.div
         initial={{
           opacity: 0,
@@ -110,7 +111,6 @@ export function HeaderSection() {
       >
         <div className="w-full overflow-hidden">
           <ContentSection />
-
         </div>
       </motion.div>
     </div>
