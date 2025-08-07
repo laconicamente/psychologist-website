@@ -28,7 +28,7 @@ export function ContactSection() {
             <Box display={"flex"} flexDirection={{ xs: "column", sm: "column", md: "row" }} gap={4}>
               <Box width={{ sm: "100%", md: "50%" }}>
                 <Box gap={3}>
-                  <h2 className="relative z-20 pb-8 font-bold text-5xl sm:text-5xl">
+                  <h2 className="relative z-20 pb-8 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-5xl">
                     {"Entre em contato".split(" ").map((word, index) => (
                       <motion.span
                         key={index}
