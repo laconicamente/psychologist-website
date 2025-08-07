@@ -1,5 +1,5 @@
 "use client";
-import { Box, Link, Typography, Card } from "@mui/material";
+import { Box, Typography, Card } from "@mui/material";
 import MapOutlined from "@mui/icons-material/MapOutlined";
 import CallEndRounded from "@mui/icons-material/CallEndRounded";
 import { motion } from "motion/react";
@@ -28,7 +28,7 @@ export function ContactSection() {
         <Box display={"flex"} flexDirection={{ xs: "column", sm: "column", md: "row" }} gap={9}>
               <Box width={{ sm: "100%", md: "40%" }}>
                 <Box gap={3}>
-                  <h2 className="playfair relative z-20 py-8 font-bold text-5xl sm:text-5xl">
+                  <h2 className="relative z-20 py-8 font-bold text-5xl sm:text-5xl">
                     {"Entre em contato".split(" ").map((word, index) => (
                       <motion.span
                         key={index}
@@ -54,7 +54,7 @@ export function ContactSection() {
               </Box>
 
               <div className="w-full relative flex flex-wrap justify-start items-end gap-4">
-                <div className="relative flex flex-wrap justify-center gap-2">
+                <div className="relative flex flex-wrap justify-start gap-2">
                   <Card
                     sx={{
                       width: "4em",
@@ -73,7 +73,7 @@ export function ContactSection() {
                     BA, 41100-800
                   </Typography>
                 </div>
-                <div className="relative flex flex-wrap justify-center gap-2">
+                <div className="relative flex flex-wrap justify-start gap-2">
                   <Card
                     style={{
                       width: "4em",
