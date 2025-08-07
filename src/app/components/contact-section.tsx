@@ -69,7 +69,7 @@ export function ContactSection() {
                   </Card>
                   <Typography>
                     <strong>Endereço</strong> <br />
-                    Av. Tancredo Neves, 1283 - Caminho das Árvores, <br />Salvador -
+                    Av. Tancredo Neves, 1283 - Caminho das Árvores, Salvador -
                     BA, 41100-800
                   </Typography>
                   <div className="w-full">
