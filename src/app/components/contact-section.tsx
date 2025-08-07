@@ -24,9 +24,9 @@ export function ContactSection() {
         className="relative w-full"
       >
         <Box minHeight={"15em"}>
-        <div className="relative p-10 pb-15">
-        <Box display={"flex"} flexDirection={{ xs: "column", sm: "column", md: "row" }} gap={9}>
-              <Box width={{ sm: "100%", md: "40%" }}>
+          <div className="relative p-10 pb-15">
+            <Box display={"flex"} flexDirection={{ xs: "column", sm: "column", md: "row" }} gap={9}>
+              <Box width={{ sm: "100%", md: "50%" }}>
                 <Box gap={3}>
                   <h2 className="relative z-20 py-8 font-bold text-5xl sm:text-5xl">
                     {"Entre em contato".split(" ").map((word, index) => (
@@ -53,8 +53,8 @@ export function ContactSection() {
                 </Box>
               </Box>
 
-              <div className="w-full relative flex flex-wrap justify-start items-end gap-4">
-                <div className="relative flex flex-wrap justify-start gap-2">
+              <div className="w-full relative flex flex-wrap justify-start items-start gap-6">
+                <div className="relative flex flex-wrap justify-start gap-4 flex-col">
                   <Card
                     sx={{
                       width: "4em",
@@ -72,8 +72,17 @@ export function ContactSection() {
                     Av. Tancredo Neves, 1283 - Caminho das Árvores, <br />Salvador -
                     BA, 41100-800
                   </Typography>
+                  <div className="w-full">
+
+                    <LinkPreview url="https://maps.app.goo.gl/24bJCns1N8YMWhbT7" className="font-bold">
+
+                      <button style={{ cursor: 'pointer', fontSize: '10pt' }} className="px-8 py-4 rounded-full text-white bg-black font-bold text-stale-700 tracking-widest uppercase transform hover:scale-105 hover:bg-black transition-colors duration-200">
+                        <MapOutlined /> Veja a localização
+                      </button>
+                    </LinkPreview>
+                  </div>
                 </div>
-                <div className="relative flex flex-wrap justify-start gap-2">
+                <div className="relative flex flex-wrap justify-start gap-4 flex-col">
                   <Card
                     style={{
                       width: "4em",
@@ -81,7 +90,7 @@ export function ContactSection() {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      flexWrap: "wrap"
+                      flexWrap: "wrap",
                     }}
                   >
                     <CallEndRounded />
@@ -96,35 +105,6 @@ export function ContactSection() {
               </div>
             </Box>
           </div>
-          <Box position={"relative"}>
-      
-              <Box
-                position={"relative"}
-                style={{
-                  background: "url('images/mapa.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  opacity: "0.9",
-                  filter: "brightness(0.7)",
-                }}
-                height={"25em"}
-              ></Box>
-              <Box
-                display={"flex"}
-                justifyContent={"center"}
-                alignItems={"center"}
-                position={'absolute'}
-                width={"100%"}
-                top={'45%'}
-              >
-                <LinkPreview url="https://maps.app.goo.gl/24bJCns1N8YMWhbT7" className="font-bold">
-
-                  <button style={{ cursor: 'pointer' }} className="px-12 py-4 rounded-full bg-white font-bold text-stale-700 tracking-widest uppercase transform hover:scale-105 hover:bg-gray-100 transition-colors duration-200">
-                    <MapOutlined /> Veja a localização
-                  </button>
-                </LinkPreview>
-              </Box>
-          </Box>
         </Box>
       </motion.div>
     </>
