@@ -4,6 +4,9 @@ import MapOutlined from "@mui/icons-material/MapOutlined";
 import CallEndRounded from "@mui/icons-material/CallEndRounded";
 import { motion } from "motion/react";
 import { LinkPreview } from "./link-preview";
+import Instagram from "@mui/icons-material/Instagram";
+import Link from "next/link";
+
 
 export function ContactSection() {
   return (
@@ -101,6 +104,10 @@ export function ContactSection() {
                     <br />
                     contatopedrovieirapsi@gmail.com
                   </Typography>
+
+                  <Box display={'flex'} gap={4}>
+                     <Link href="https://www.instagram.com/vieirapedropsi" target="_blank"><Instagram /> </Link>
+                  </Box>
                 </div>
               </div>
             </Box>
