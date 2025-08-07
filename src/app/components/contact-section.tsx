@@ -49,7 +49,7 @@ export function ContactSection() {
                     ))}
                   </h2>
                   <Box>
-                    Se desejar esclarecer dúvidas, agendar consultas online ou
+                    Se desejar esclarecer dúvidas, agendar consultas ou
                     obter mais informações, estou à disposição nos canais
                     de contato disponibilizados no site.
                   </Box>
