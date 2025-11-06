@@ -105,8 +105,10 @@ export function ContactSection() {
                     contatopedrovieirapsi@gmail.com
                   </Typography>
 
-                  <Box display={'flex'} gap={4}>
-                     <Link href="https://www.instagram.com/vieirapedropsi" target="_blank"><Instagram /> </Link>
+                  <Box display={'flex nowrap'} gap={4}>
+                     <Link href="https://www.instagram.com/vieirapedropsi" target="_blank"><Instagram /> 
+                     <span>   @vieirapedropsi</span>
+                   </Link>
                   </Box>
                 </div>
               </div>
