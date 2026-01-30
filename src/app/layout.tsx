@@ -67,6 +67,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11389764557"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11389764557'); </script>
+        <script> gtag('event', 'conversion', {'send_to': 'AW-11389764557/FgCICOmGv_AYEM2HiLcq'}); </script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
