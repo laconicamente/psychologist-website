@@ -7,6 +7,11 @@ import { cn } from "@/lib/utils";
 import { LinkPreview } from "./link-preview";
 import Image from "next/image";
 
+const handleContactClick = async () => {
+  const { default: ReactPixel } = await import("react-facebook-pixel");
+  ReactPixel.track("Contact");
+};
+
 
 function InitialSection() {
   return (
@@ -79,7 +84,7 @@ function InitialSection() {
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
           <LinkPreview url="https://wa.me/557498044544?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" className="font-bold">
-            <button onClick={() => fbq('track', 'Contact')} style={{ cursor: 'pointer', fontSize: '11pt' }} className="px-12 py-3 rounded-full bg-[#333333] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#222222] transition-colors duration-200">
+            <button onClick={handleContactClick} style={{ cursor: 'pointer', fontSize: '11pt' }} className="px-12 py-3 rounded-full bg-[#333333] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#222222] transition-colors duration-200">
               <CalendarMonthOutlined /> Agende sua consulta
             </button>
           </LinkPreview>
