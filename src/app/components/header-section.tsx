@@ -7,15 +7,16 @@ import { cn } from "@/lib/utils";
 import { LinkPreview } from "./link-preview";
 import Image from "next/image";
 
-const handleContactClick = async () => {
-  const registrarContato = (e) => {
-    console.log('registrarContato')
-    // Garante que o Pixel só seja chamado se estiver carregado
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Contact');
+declare global {
+  interface Window {
+    fbq?: (command: "track", eventName: string) => void;
   }
-  const { default: ReactPixel } = await import("react-facebook-pixel");
-  ReactPixel.track("Contact");
+}
+
+const handleContactClick = () => {
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "Contact");
+  }
 };
 
 
