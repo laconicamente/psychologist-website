@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     "psi"
   ],
   authors: [{ name: "Pedro Vieira" }],
+  verification: {
+    other: {
+      "facebook-domain-verification": "9iwrlgg2pbgbn73aqj5obwggdohk9j",
+    },
+  },
   openGraph: {
     title: "Pedro Vieira - Psicólogo e Psicanalista",
     description: "Consultas presenciais e online em Salvador e para todo o Brasil.",
