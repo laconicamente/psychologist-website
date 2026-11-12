@@ -9,13 +9,13 @@ import Image from "next/image";
 
 declare global {
   interface Window {
-    fbq?: (command: "track", eventName: string) => void;
+    fbq?: (command: "trackCustom", eventName: string) => void;
   }
 }
 
 const handleContactClick = () => {
   if (typeof window !== "undefined" && window.fbq) {
-    window.fbq("track", "Contact");
+    window.fbq('trackCustom', 'ContatoTerapia');
   }
 };
 
