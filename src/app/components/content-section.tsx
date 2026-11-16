@@ -7,7 +7,9 @@ const content = [
     {
         title: "Sobre mim",
         description:
-            "Formado em psicologia pela Universidade Federal do Vale do São Francisco (UNIVASF).  Atua como psicólogo clínico através da psicanálise lacaniana, trabalhando com atendimentos individuais para o público adulto na modalidade on-line",
+            "Formado em psicologia pela Universidade Federal do Vale do São Francisco (UNIVASF).  Atua como psicólogo clínico através da psicanálise lacaniana, trabalhando com atendimentos individuais para o público adulto na modalidade on-line, supervisão e grupos de estudos.",
+            
+        
         content: (
             <div className="flex h-full w-full items-center justify-center text-white hidden md:flex lg:flex">
                 <img
