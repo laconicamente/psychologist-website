@@ -7,7 +7,7 @@ const content = [
     {
         title: "Sobre mim",
         description:
-            "Formado em psicologia pela Universidade Federal do Vale do São Francisco (UNIVASF).  Atua como psicólogo clínico através da psicanálise lacaniana, trabalhando com atendimentos individuais para o público adulto na modalidade on-line (Brasil) e presencial (Salvador-BA). É membro do Oré Coletivo Solidário, coletivo de saúde mental voltado a pensar as condições de trabalho do psicólogo a partir do modelo da Economia Solidária (ECOSOL). É pesquisador no CERCOS (Grupo de Estudos e Pesquisa sobre Cercamento, Controles e Mercados), atualmente interessado no tema da produção de luto em contextos emergênciais.",
+            "Formado em psicologia pela Universidade Federal do Vale do São Francisco (UNIVASF).  Atua como psicólogo clínico através da psicanálise lacaniana, trabalhando com atendimentos individuais para o público adulto na modalidade <on-line className=""></on-line>
         content: (
             <div className="flex h-full w-full items-center justify-center text-white hidden md:flex lg:flex">
                 <img
