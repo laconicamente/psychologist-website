@@ -7,7 +7,7 @@ const content = [
     {
         title: "Sobre mim",
         description:
-            "Formado em psicologia pela Universidade Federal do Vale do São Francisco (UNIVASF).  Atua como psicólogo clínico através da psicanálise lacaniana, trabalhando com atendimentos individuais para o público adulto na modalidade on-line, supervisão e grupos de estudos.",
+            "Formado em Psicologia pela Universidade Federal do Vale do São Francisco (UNIVASF). Atua como psicólogo clínico a partir da psicanálise lacaniana, trabalhando com atendimentos individuais para o público adulto na modalidade on-line, além de supervisão e grupos de estudos.",
             
         
         content: (
